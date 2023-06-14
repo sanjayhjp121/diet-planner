@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Planner</title>
+</head>
+<link rel="stylesheet" href="styles.css">
+<body>  
+    <nav class="navbar">
+        <h1>Diet Planner</h1>
+        <p>Plan a Diet For You</p>
+    </nav>
+    <main class="app">
+        <form class="app__form">
+            <div class="form-control">
+                <label for="calories">Enter No of Calories</label>
+                <span class="unit">(400-800 Kcal)</span>
+                <input type="number" id="calories" min="400" max="800">
+            </div>
+            <button class="btn-submit">Plan Diet</button>
+        </form>
+
+        <div class="app__result">
+            <div class="result__item ">
+                <h3>Breakfast</h3>
+                <div class="foods breakfast">
+                    <div class="food__item">
+                        <p style="padding: 1rem;text-align: center;width: 100%;">Please Provide any Data</p>
+                    </div>
+                </div>
+            </div>
+            <div class="result__item ">
+                <h3>Lunch</h3>
+                <div class="foods lunch">
+                    <div class="food__item">
+                        <p style="padding: 1rem;text-align: center;width: 100%;">Please Provide any Data</p>
+                    </div>
+                </div>
+            </div>
+            <div class="result__item ">
+                <h3>Dinner</h3>
+                <div class="foods dinner">
+                    <div class="food__item">
+                        <p style="padding: 1rem;text-align: center;width: 100%;">Please Provide any Data</p>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

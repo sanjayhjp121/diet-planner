@@ -1,0 +1,165 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800&display=swap);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f3f2ef;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.navbar{
+    background-color: #B04759;
+    color: #fff;
+    padding: 1.5rem 5rem;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    
+}
+
+.navbar h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.navbar p{
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px){
+    .navbar{
+        flex-direction: column;
+        gap: 1rem;
+    }   
+}
+
+.app{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    max-width: 600px;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+
+.app form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    border: 1px solid #dbdbdd;
+    border-radius: 0.5rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+
+}
+
+form .form-control{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.form-control label{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.form-control input{
+    font-size: 1.2rem;
+    text-align: center;
+    width: 5rem;
+    padding: 10px;
+    outline: none;
+    font-weight: 500;
+}
+
+form .btn-submit{
+    padding: 1rem;
+    text-align: center;
+    background:none;
+    border: none;
+    background-color: #B04759;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.2s;
+}
+
+.btn-submit:hover{
+    background-color: white;
+    color: #B04759;
+    border: 1px solid #B04759;
+}
+
+.app__result{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.result__item{
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+.result__item h3{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.foods{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.food__item{
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); 
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.food__item:hover{
+    background-color: #B5F1CC;
+}
+
+.food__item img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.food-item__info{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    gap: 0.5rem;
+    padding-bottom: 10px;
+}
